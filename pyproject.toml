@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "trading"
 version = "0.1.0"
-description = ""
+description = "Trading infrastructure"
 authors = ["Wonjae Choi <choi@wonj.me>"]
 readme = "README.md"
 license = ""
-repository = ""
+repository = "https://github.com/wonj1012/trading"
 packages = [
     { include = "commands", from = "src" },
     { include = "indicators", from = "src" },
