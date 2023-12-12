@@ -1,23 +1,29 @@
 [tool.poetry]
 name = "trading"
 version = "0.1.0"
-description = "Trading infrastructure"
+description = "Trading Infrastructure"
 authors = ["Wonjae Choi <choi@wonj.me>"]
 readme = "README.md"
-license = ""
+license = "CC BY-NC-ND 4.0"
 repository = "https://github.com/wonj1012/trading"
 packages = [
-    { include = "commands", from = "src" },
-    { include = "indicators", from = "src" },
-    { include = "market_data", from = "src" },
-    { include = "strategies", from = "src" },
-    { include = "trading_bot", from = "src" },
+    { include = "binance_api", from = "src"},
+    { include = "data_manager", from = "src" },
+    { include = "main", from = "src" },
+    { include = "models", from = "src" },
+    { include = "trading", from = "src" },
     { include = "utils", from = "src" },
 ]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 pandas = "^2.1.3"
+python-binance = "^1.0.19"
+python-dotenv = "^1.0.0"
+influxdb3-python = "^0.3.1"
+sqlalchemy = "^2.0.23"
+pyyaml = "^6.0.1"
+loguru = "^0.7.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
