@@ -1,0 +1,8 @@
+assets:
+  - symbol: "BTCUSDT"
+    asset_type: "COINFUTURES"
+    exchange: "BINANCE"
+
+  # - symbol: "ETH"
+  #   asset_type: "COINSPOT"
+  #   exchange: "BINANCE"
